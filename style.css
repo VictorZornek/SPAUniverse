@@ -15,19 +15,27 @@
 }
 
 body {
-    background-image: url('./assets/homeBackground.svg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-
+    
     height: 90vh;
+}
+
+body {
+    background-image: url('./assets/explorationBackground.svg');
+}
+
+.home {
+    background-image: url('./assets/homeBackground.svg');
 }
 
 .universe {
     background-image: url('./assets/universeBackgroud.svg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+}
+
+.exploration {
+    background-image: url('./assets/explorationBackground.svg');
 }
 
 nav {
@@ -50,20 +58,20 @@ a:hover {
 }
 
 
-#home {
+#home, #error404 {
     display: grid;
     place-content: center;
     justify-items: center;
 }
 
-#home h1, #universe h1, #exploration h1 {
+#home h1, #universe h1, #exploration h1, #error404 h1 {
     font-size: 4.8rem;
     font-weight: bold;
 
     color: var(--text-color);
 }
 
-#home h1 {
+#home h1, #error404 h1 {
     margin: 17rem 0 2.4rem;
 }
 

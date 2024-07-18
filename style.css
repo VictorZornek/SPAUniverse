@@ -4,3 +4,100 @@
     box-sizing: border-box;
 }
 
+:root {
+    font-size: 62.5%;
+    font-family: sans-serif;
+
+    --text-nav-color: #C4C4CC;
+    --text-color: #E1E1E6;
+    --text-button-color-hover: #02799D;
+    --bg-button-color: #FFFFFF;
+}
+
+body {
+    background-image: url('./assets/homeBackground.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    height: 90vh;
+}
+
+.universe {
+    background-image: url('./assets/universeBackgroud.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 3.2rem;
+
+    font-size: 2.4rem;
+    margin: 4rem 0 0 7.2rem;
+}
+
+a {
+    color: var(--text-nav-color);
+    text-decoration: none;
+
+}
+
+a:hover {
+    color: white;
+}
+
+
+#home {
+    display: grid;
+    place-content: center;
+    justify-items: center;
+}
+
+#home h1, #universe h1, #exploration h1 {
+    font-size: 4.8rem;
+    font-weight: bold;
+
+    color: var(--text-color);
+}
+
+#home h1 {
+    margin: 17rem 0 2.4rem;
+}
+
+#home a {
+    font-size: 1.4rem;
+    font-weight: bold;
+
+    border: 1px solid white;
+    border-radius: .5rem;
+
+    padding: 1.2rem 3.2rem;
+
+    color: var(--text-color);
+}
+
+#home a:hover {
+    color: var(--text-button-color-hover);
+    background-color: var(--bg-button-color);
+}
+
+#universe, #exploration {
+    margin-left: 10.2rem;
+}
+
+#universe h1, #exploration h1 {
+    margin: 10.2rem 0 1.6rem;
+}
+
+#universe p, #exploration p {
+    max-width: 64.8rem;
+
+    font-size: 1.8rem;
+    line-height: 160%;
+
+    color: var(--text-color);
+
+}
